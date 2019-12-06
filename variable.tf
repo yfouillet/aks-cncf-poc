@@ -1,14 +1,3 @@
-# Provider vars
-variable "tenant_id" {
-}
-variable "subscription_id" {
-}
-variable "client_id" {
-}
-
-variable "client_secret" {
-}
-
 
 # azurerm_resource_group vars
 variable "env" {
