@@ -1,3 +1,9 @@
+terraform {
+  backend "azurerm" {
+  }
+}
+
+
 provider "azurerm" {
     version                   = "v1.37.0"
 }
