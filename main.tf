@@ -16,8 +16,8 @@ module "resource_group" {
 
 module "public_ip" {
   source              = "./modules/azurerm_public_ip"
-  name                = "acceptanceTestPublicIp1"
-  location            = module.resource_group.resource_group_location.name
+  public_ip_name                = "acceptanceTestPublicIp1"
+  ip_location            = module.resource_group.resource_group_location.name
   resource_group_name = module.resource_group.resource_group.id
   allocation_method   = "Static"
 }
