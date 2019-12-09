@@ -8,6 +8,7 @@ variable "ip_location" {
 
 # Accepted values are Basic and Standard. Defaults to Basic.
 variable "sku" {
+    default = "Basic"
 }
 variable "allocation_method" {
 }

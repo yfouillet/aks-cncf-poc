@@ -20,4 +20,5 @@ module "public_ip" {
   ip_location            = module.resource_group.resource_group_location.name
   resource_group_name = module.resource_group.resource_group.id
   allocation_method   = "Static"
+  sku                 = "Basic"
 }
