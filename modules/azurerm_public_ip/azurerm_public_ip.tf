@@ -2,7 +2,7 @@
 
 resource "azurerm_public_ip" "public_ip" {
   name                = var.public_ip_name
-  resource_group_name = module.azurerm_resource_group.resource_group_name_id
+  resource_group_name = var.resource_group_name
   location            = var.ip_location
   sku                 = var.sku
   allocation_method   = var.allocation_method
